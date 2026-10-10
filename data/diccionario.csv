@@ -1,0 +1,41 @@
+tabla,campo,descripcion
+datos_largos,fecha,Fecha ISO AAAA-MM-DD (vacía si no hay registro)
+datos_largos,lote,Lote normalizado L01..L23
+datos_largos,edad_dias,Día de vida en granja (1 = llegada)
+datos_largos,variable,Nombre de la medición (ver abajo)
+datos_largos,valor,Valor numérico
+datos_largos,unidad,Unidad del valor
+datos_largos,fuente_pestana,Pestaña de origen
+datos_largos,flag,Notas de calidad separadas por ';' (vacío = sin observaciones)
+datos_largos,causa_mortalidad,Causa de muerte categorizada desde la bitácora (texto libre original excluido por privacidad)
+datos_largos.variable,alimento_g,Alimento suministrado al lote en el día [g/lote/día] - 864 filas
+datos_largos.variable,alimento_g_ave,Alimento del día / aves iniciales [g/ave/día] - 864 filas
+datos_largos.variable,agua_l,Agua suministrada al lote [L/lote/día (suministrada)] - 132 filas
+datos_largos.variable,agua_rechazo_l,Agua sobrante/rechazada [L/lote/día (sobrante)] - 69 filas
+datos_largos.variable,agua_neta_l,Agua suministrada - rechazada [L/lote/día (consumida)] - 69 filas
+datos_largos.variable,agua_ml_ave,ml por ave según registro original [ml/ave/día] - 43 filas
+datos_largos.variable,peso_g,Peso individual de ave muestreada [g/ave (muestra individual)] - 60 filas
+datos_largos.variable,peso_sacrificio_g,Peso de ave en muestreo de calidad al sacrificio [g/ave (muestra calidad)] - 25 filas
+datos_largos.variable,mortalidad,1 = un ave muerta (columna nota = causa) [aves] - 64 filas
+datos_largos.variable,ventas_kg,Kg de carne (canal limpia) vendidos [kg carne (canal)] - 59 filas
+datos_largos.variable,ventas_unidades,Aves vendidas [aves] - 89 filas
+datos_largos.variable,ventas_cop,Valor de la venta [COP] - 85 filas
+datos_largos.variable,precio_cop_kg,Valor venta / kg [COP/kg] - 56 filas
+datos_largos.variable,ventas_menudencias_cop,Venta de menudencias [COP] - 7 filas
+resumen_lotes,lote,
+resumen_lotes,proveedor,Proveedor de pollitos anonimizado (Proveedor A-E por orden de aparición)
+resumen_lotes,fecha_llegada,
+resumen_lotes,ultimo_registro_alimento,
+resumen_lotes,dias_registrados,
+resumen_lotes,aves_iniciales,
+resumen_lotes,muertes_eventos,
+resumen_lotes,muertes_tabla_original,
+resumen_lotes,desaparecidas,
+resumen_lotes,vendidas,
+resumen_lotes,sin_explicar,
+resumen_lotes,kg_vendidos,
+resumen_lotes,peso_canal_prom_kg,
+resumen_lotes,alimento_total_kg,
+resumen_lotes,conversion_alimento_canal,
+resumen_lotes,ingreso_cop,
+resumen_lotes,mortalidad_pct,

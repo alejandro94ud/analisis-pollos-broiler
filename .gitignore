@@ -1,0 +1,17 @@
+# Entornos
+.venv/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+# Datos crudos privados (nunca publicar)
+raw/
+*.xlsx
+*.xlsm
+*.xls
+# Credenciales
+.env
+*.pem
+*.key
+credentials*.json
+token*.json
+client_secret*.json

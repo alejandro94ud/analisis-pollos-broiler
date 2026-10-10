@@ -1,0 +1,42 @@
+paso,detalle,filas_afectadas
+alimento,Pestaña ancha RegistroRacionDiariaRegistroTod (filas 8-255; la fila 257 son totales y se ignora) pasada a formato largo; edad_dias = días desde el primer registro de cada lote (+1).,
+fechas,Fechas escritas como texto convertidas a ISO (p.ej. '27 de enero de 2021'); si no tenían año se asumió 2021.,23.0
+alimento,"Marcadas caídas de consumo >50% respecto al día anterior (probable registro de lo servido y no de lo consumido, o día no registrado). No se corrigen.",15.0
+alimento,alimento_g_ave calculado = alimento_g / aves iniciales (no descuenta mortalidad diaria).,
+agua,"AguaLote1 excluida: contiene un modelo teórico (consumo esperado n=50), no mediciones.",
+agua,Agua neta = suministrada - rechazada (calculada). Días sin dato marcados 'faltante'.,
+peso,Pesos individuales (5 aves/día) de lotes 3 y 4; fecha = llegada + día - 1.,60.0
+peso,Marcados pesos que se apartan >40% de la mediana del mismo lote y día.,3.0
+unidades,Pesos de muestra del lote 11 venían en libras; convertidos a gramos (x453.592).,15.0
+mortalidad,Cada evento = 1 ave. Numeración original salta del 16 al 18 y mezcla texto/número; se ignora la numeración y se cuenta por filas.,
+mortalidad,Eventos sin fecha (periodo 22-jun a 12-jul-2021) se conservan con fecha vacía.,16.0
+ventas,Se toman solo filas con fecha de cada bloque de lote; filas de totales y cálculos auxiliares se ignoran. Menudencias en variable aparte.,
+duplicados,"Filas idénticas (fecha, lote, variable, valor) marcadas como posible_duplicado, no borradas.",21.0
+ventas,Ventas de lotes 12-13 y 14-15 registradas juntas: lote='L12+L13'/'L14+L15'; el resumen incluye filas combinadas.,
+ventas,"Kg con >5 kg/ave (L05: 76.44 kg por 1 ave, 18-may-2021) se conserva marcado y se EXCLUYE de kg_vendidos.",1.0
+resumen,"Conversión = alimento total registrado (kg) / kg de canal vendidos. Es conversión sobre CARNE LIMPIA, no sobre peso vivo; no comparable 1:1 con estándar Ross/Cobb (~1.6-1.8 vivo).",
+resumen,mortalidad_pct usa muertes de la tabla resumen original; muertes_eventos cuenta filas del registro de eventos (pueden diferir). sin_explicar = iniciales - muertes - desaparecidas - vendidas.,
+anomalia,L01: +1 aves sin explicar (iniciales-muertes-desap.-vendidas).,1.0
+anomalia,L03: +10 aves sin explicar (iniciales-muertes-desap.-vendidas).,1.0
+anomalia,L04: -8 aves sin explicar (iniciales-muertes-desap.-vendidas).,1.0
+anomalia,L05: +3 aves sin explicar (iniciales-muertes-desap.-vendidas).,1.0
+anomalia,L06: -1 aves sin explicar (iniciales-muertes-desap.-vendidas).,1.0
+anomalia,L07: -7 aves sin explicar (iniciales-muertes-desap.-vendidas).,1.0
+anomalia,L08: +19 aves sin explicar (iniciales-muertes-desap.-vendidas).,1.0
+anomalia,L10: +8 aves sin explicar (iniciales-muertes-desap.-vendidas).,1.0
+anomalia,L11: +28 aves sin explicar (iniciales-muertes-desap.-vendidas).,1.0
+anomalia,L12: muertes en eventos (21) ≠ tabla resumen (10.0).,1.0
+anomalia,L12: sin ventas registradas.,1.0
+anomalia,L12+L13: muertes en eventos (28) ≠ tabla resumen (21.0).,1.0
+anomalia,L12+L13: +6 aves sin explicar (iniciales-muertes-desap.-vendidas).,1.0
+anomalia,L13: muertes en eventos (7) ≠ tabla resumen (11.0).,1.0
+anomalia,L13: sin ventas registradas.,1.0
+anomalia,L14: sin ventas registradas.,1.0
+anomalia,L14+L15: muertes en eventos (11) ≠ tabla resumen (20.0).,1.0
+anomalia,L14+L15: +7 aves sin explicar (iniciales-muertes-desap.-vendidas).,1.0
+anomalia,L15: muertes en eventos (1) ≠ tabla resumen (10.0).,1.0
+anomalia,L15: sin ventas registradas.,1.0
+anomalia,L17: +26 aves sin explicar (iniciales-muertes-desap.-vendidas).,1.0
+anomalia,Pestaña Inventario contiene 6 fechas de 2023 (posteriores al proyecto); no se usan.,6.0
+anomalia,Temperatura no existe como variable numérica (solo en texto de bitácoras); no incluida.,
+anomalia,Pestaña 'Lotes 5 y 6' vacía; peso diario solo existe para lotes 3 y 4 (días 1-11).,
