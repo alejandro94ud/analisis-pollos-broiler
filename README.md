@@ -94,3 +94,8 @@ python -m venv .venv && .venv/bin/pip install -r requirements.txt
 
 ## Sobre mí
 **Daniel Alejandro Barreto Guerrero**, Ingeniero Industrial.
+
+## ¿Trabajamos juntos?
+¿Tienes una granja o un negocio con registros en cuadernos o en Excel? Ofrezco la plantilla de registro diario lista para usar, con su dashboard, y el servicio de análisis de tus datos para encontrar dónde se pierde la plata.
+
+👉 Escríbeme por [LinkedIn](https://www.linkedin.com/in/alejandro-barreto-datos/)
